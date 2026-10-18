@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="复旦大学自然语言处理与大语言模型课程：课程介绍、学习路线、公开讲义、实验作业与个人项目。中文授课，英文材料。">
+  <meta name="theme-color" content="#fbfbf9">
+  <title>自然语言处理与大语言模型 · 复旦大学</title>
+  <link rel="canonical" href="https://baojian.github.io/fdu-nlp-llms/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-zh="跳至课程内容" data-en="Skip to course content">跳至课程内容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#overview" aria-label="NLP and LLMs home">NLP <span>&amp;</span> LLMs</a>
+      <div class="header-actions">
+        <a class="header-link" href="https://github.com/baojian/llm-26-fall"><span data-zh="课程资料" data-en="Materials">课程资料</span> <span aria-hidden="true">↗</span></a>
+        <div class="lang-toggle" role="group" aria-label="Language / 语言" hidden>
+          <button type="button" data-lang="zh" lang="zh-CN" aria-pressed="true">中文</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="overview" aria-labelledby="course-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-zh="复旦大学 · 大数据学院" data-en="Fudan University · School of Data Science">复旦大学 · 大数据学院</p>
+        <h1 id="course-title"><span data-zh="自然语言处理" data-en="Natural Language">自然语言处理</span><br><span data-zh="与大语言模型" data-en="Processing &amp; LLMs">与大语言模型</span></h1>
+        <p class="english-title" lang="en" data-zh="Natural Language Processing and Large Language Models" data-en="自然语言处理与大语言模型">Natural Language Processing and Large Language Models</p>
+        <p class="hero-description" data-zh="从文本表示出发，理解语言模型的训练与应用。通过可运行的实现、受控实验和个人项目，学习用证据回答一个具体问题。" data-en="Start with text representations and learn how language models are trained and used. Build working implementations, run controlled experiments, and investigate a concrete question through an individual project.">从文本表示出发，理解语言模型的训练与应用。通过可运行的实现、受控实验和个人项目，学习用证据回答一个具体问题。</p>
+        <div class="course-facts" aria-label="Course facts / 课程信息">
+          <span><strong>16</strong> <span data-zh="教学周" data-en="weeks">教学周</span></span>
+          <span><strong>48</strong> <span data-zh="学时" data-en="class hours">学时</span></span>
+          <span><strong>3</strong> <span data-zh="学分" data-en="credits">学分</span></span>
+        </div>
+        <p class="language-note" data-zh="中文授课 · 英文材料" data-en="Chinese lectures · English materials">中文授课 · 英文材料</p>
+      </div>
+      <aside class="semester-card" aria-labelledby="current-semester">
+        <p class="eyebrow" data-zh="当前学期" data-en="Current offering">当前学期</p>
+        <h2 id="current-semester"><span data-zh="2026 秋季" data-en="Fall 2026">2026 秋季</span></h2>
+        <p class="semester-code">CS40008.01</p>
+        <p data-zh="查看本学期的教学安排、讲义、作业说明与最新通知。" data-en="Find the semester schedule, lecture materials, assignment instructions, and announcements.">查看本学期的教学安排、讲义、作业说明与最新通知。</p>
+        <a class="button primary" href="https://baojian.github.io/llm-26-fall/"><span data-zh="进入秋季课程" data-en="Open Fall 2026">进入秋季课程</span><span aria-hidden="true">↗</span></a>
+        <div class="semester-links">
+          <a href="https://baojian.github.io/llm-26-fall/#schedule" data-zh="每周安排" data-en="Schedule">每周安排</a>
+          <a href="https://github.com/baojian/llm-26-fall/issues?q=is%3Aissue%20label%3Aassignment" data-zh="作业通知" data-en="Announcements">作业通知</a>
+          <a href="https://elearning.fudan.edu.cn/">eLearning</a>
+        </div>
+        <p class="small semester-note" data-zh="具体日期、提交要求与变更，以秋季课程站和正式通知为准。" data-en="Refer to the semester site and official announcements for dates, submission requirements, and updates.">具体日期、提交要求与变更，以秋季课程站和正式通知为准。</p>
+      </aside>
+    </section>
+
+    <nav class="section-nav" aria-label="Course navigation / 课程导航">
+      <div class="wrap nav-inner">
+        <a href="#goals" data-zh="课程目标" data-en="Goals">课程目标</a>
+        <a href="#roadmap" data-zh="学习路线" data-en="Roadmap">学习路线</a>
+        <a href="#materials" data-zh="学习资源" data-en="Materials">学习资源</a>
+        <a href="#project" data-zh="个人项目" data-en="Project">个人项目</a>
+        <a href="#assessment" data-zh="考核与规范" data-en="Assessment">考核与规范</a>
+        <a href="#offerings" data-zh="学期入口" data-en="Offerings">学期入口</a>
+      </div>
+    </nav>
+
+    <div class="wrap main-content">
+      <section id="goals" class="content-section" aria-labelledby="goals-title">
+        <div class="section-heading"><p class="section-number">01 /</p><h2 id="goals-title" data-zh="理解原理，也动手验证" data-en="Understand, implement, investigate">理解原理，也动手验证</h2></div>
+        <p class="section-intro" data-zh="课程连接自然语言处理基础与现代大语言模型，覆盖数据、模型、训练、评测和应用。建议具备 Python 编程、概率与矩阵运算以及机器学习入门知识。" data-en="The course connects NLP foundations with modern LLMs, covering data, models, training, evaluation, and applications. Prerequisites are Python, probability and matrix operations, and introductory machine learning.">课程连接自然语言处理基础与现代大语言模型，覆盖数据、模型、训练、评测和应用。建议具备 Python 编程、概率与矩阵运算以及机器学习入门知识。</p>
+        <div class="goals-grid">
+          <article class="goal"><span class="goal-index" aria-hidden="true">01</span><h3 data-zh="解释模型机制" data-en="Explain the mechanisms">解释模型机制</h3><p data-zh="从分词与语言建模，到注意力和 Transformer，说明表示方式、训练目标与生成过程之间的联系。" data-en="Connect tokenization and language modeling to attention and Transformers; explain how representations, objectives, and generation interact.">从分词与语言建模，到注意力和 Transformer，说明表示方式、训练目标与生成过程之间的联系。</p></article>
+          <article class="goal"><span class="goal-index" aria-hidden="true">02</span><h3 data-zh="完成可复现实验" data-en="Build reproducible experiments">完成可复现实验</h3><p data-zh="实现小规模模型，检查数据与代码，在明确的计算预算下训练、评测并比较不同方案。" data-en="Implement small models, inspect data and code, and compare training and evaluation choices within an explicit compute budget.">实现小规模模型，检查数据与代码，在明确的计算预算下训练、评测并比较不同方案。</p></article>
+          <article class="goal"><span class="goal-index" aria-hidden="true">03</span><h3 data-zh="用证据形成判断" data-en="Reason from evidence">用证据形成判断</h3><p data-zh="提出可回答的问题，设置基线与对照，分析失败和局限，把实验结果写成可核查的结论。" data-en="Ask an answerable question, design baselines and controls, analyze failures and limitations, and write conclusions that can be checked.">提出可回答的问题，设置基线与对照，分析失败和局限，把实验结果写成可核查的结论。</p></article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="content-section" aria-labelledby="roadmap-title">
+        <div class="section-heading"><p class="section-number">02 /</p><h2 id="roadmap-title" data-zh="16 周学习路线" data-en="A 16-week learning path">16 周学习路线</h2></div>
+        <div class="section-intro split-intro"><p data-zh="以下为 2026 秋季教学计划。先建立共同基础，再研究训练与评测，最后走向适配、检索和智能体。" data-en="The Fall 2026 plan starts with common foundations, moves into training and evaluation, and continues to adaptation, retrieval, and agents.">以下为 2026 秋季教学计划。先建立共同基础，再研究训练与评测，最后走向适配、检索和智能体。</p><p class="small release-note"><span class="status-dot" aria-hidden="true"></span><span data-zh="资料状态核对：2026-10-18" data-en="Materials checked: 2026-10-18">资料状态核对：2026-10-18</span></p></div>
+
+        <details class="module" open>
+          <summary><span class="module-number" aria-hidden="true">I</span><span class="module-title"><strong data-zh="从文本到 Transformer" data-en="From text to Transformers">从文本到 Transformer</strong><span data-zh="第 1–5 周 · 表示与模型基础" data-en="Weeks 1–5 · Representations and foundations">第 1–5 周 · 表示与模型基础</span></span><span class="module-chevron" aria-hidden="true">+</span></summary>
+          <ol class="week-list">
+            <li class="week"><span class="week-number">01</span><div class="week-body"><h3 data-zh="课程导论与分词" data-en="Introduction and tokenization">课程导论与分词</h3><p data-zh="文本表示如何影响成本与模型能学到的内容？" data-en="How does text representation affect cost and what a model can learn?">文本表示如何影响成本与模型能学到的内容？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-01/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 1 周" data-en=": week 1">：第 1 周</span></a></li>
+            <li class="week"><span class="week-number">02</span><div class="week-body"><h3 data-zh="N-gram 语言模型" data-en="N-gram language models">N-gram 语言模型</h3><p data-zh="怎样建立、评估和使用一个语言模型？" data-en="How do we build, evaluate, and use a language model?">怎样建立、评估和使用一个语言模型？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-02/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 2 周" data-en=": week 2">：第 2 周</span></a></li>
+            <li class="week"><span class="week-number">03</span><div class="week-body"><h3 data-zh="词嵌入与 PyTorch" data-en="Embeddings and PyTorch">词嵌入与 PyTorch</h3><p data-zh="离散的词元如何成为可训练的表示？" data-en="How do discrete tokens become trainable representations?">离散的词元如何成为可训练的表示？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-03/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 3 周" data-en=": week 3">：第 3 周</span></a></li>
+            <li class="week"><span class="week-number">04</span><div class="week-body"><h3 data-zh="神经语言模型与循环注意力" data-en="Neural LMs and recurrent attention">神经语言模型与循环注意力</h3><p data-zh="模型如何保留并选择有用的上下文？" data-en="How can a model retain and select useful context?">模型如何保留并选择有用的上下文？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-04/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 4 周" data-en=": week 4">：第 4 周</span></a></li>
+            <li class="week"><span class="week-number">05</span><div class="week-body"><h3 data-zh="注意力与 Transformer" data-en="Attention and the Transformer">注意力与 Transformer</h3><p data-zh="注意力如何选择上下文，并构成 Transformer？" data-en="How does attention select context and lead to the Transformer?">注意力如何选择上下文，并构成 Transformer？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-05/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 5 周" data-en=": week 5">：第 5 周</span></a></li>
+          </ol>
+        </details>
+
+        <details class="module" open>
+          <summary><span class="module-number" aria-hidden="true">II</span><span class="module-title"><strong data-zh="训练、数据与证据" data-en="Training, data, and evidence">训练、数据与证据</strong><span data-zh="第 6–9 周 · 从训练过程到受控比较" data-en="Weeks 6–9 · Training and controlled comparisons">第 6–9 周 · 从训练过程到受控比较</span></span><span class="module-chevron" aria-hidden="true">+</span></summary>
+          <ol class="week-list" start="6">
+            <li class="week"><span class="week-number">06</span><div class="week-body"><h3 data-zh="预训练与解码实践" data-en="Pretraining and decoding in practice">预训练与解码实践</h3><p data-zh="什么证据表明一次训练正在正常进行？" data-en="What evidence shows that a training run is working?">什么证据表明一次训练正在正常进行？</p></div><a class="material-link" href="https://baojian.github.io/llm-26-fall/slides/lecture-06/"><span data-zh="讲义" data-en="Slides">讲义</span><span aria-hidden="true">↗</span><span class="sr-only" data-zh="：第 6 周" data-en=": week 6">：第 6 周</span></a></li>
+            <li class="week"><span class="week-number">07</span><div class="week-body"><h3 data-zh="数据准备与质量" data-en="Data preparation and quality">数据准备与质量</h3><p data-zh="固定模型和训练预算时，更好的数据能带来什么？" data-en="Can better data help under a fixed model and training budget?">固定模型和训练预算时，更好的数据能带来什么？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">08</span><div class="week-body"><h3 data-zh="计算预算与规模扩展" data-en="Compute budgets and scaling">计算预算与规模扩展</h3><p data-zh="有限的 GPU 预算应该如何分配？" data-en="How should we spend a limited GPU budget?">有限的 GPU 预算应该如何分配？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">09</span><div class="week-body"><h3 data-zh="评测与实验设计" data-en="Evaluation and experimental design">评测与实验设计</h3><p data-zh="测到的提升，真的回答了我们关心的问题吗？" data-en="Does a measured improvement answer the question we care about?">测到的提升，真的回答了我们关心的问题吗？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+          </ol>
+        </details>
+
+        <details class="module">
+          <summary><span class="module-number" aria-hidden="true">III</span><span class="module-title"><strong data-zh="适配、应用与研究" data-en="Adaptation, applications, and research">适配、应用与研究</strong><span data-zh="第 10–16 周 · 后续教学计划" data-en="Weeks 10–16 · Planned topics">第 10–16 周 · 后续教学计划</span></span><span class="module-chevron" aria-hidden="true">+</span></summary>
+          <ol class="week-list" start="10">
+            <li class="week"><span class="week-number">10</span><div class="week-body"><h3 data-zh="监督微调" data-en="Supervised fine-tuning">监督微调</h3><p data-zh="面向具体任务的训练何时能改进预训练模型？" data-en="When does task-specific training improve a pretrained model?">面向具体任务的训练何时能改进预训练模型？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">11</span><div class="week-body"><h3 data-zh="偏好、奖励与对齐" data-en="Preferences, rewards, and alignment">偏好、奖励与对齐</h3><p data-zh="优化目标与真正想要的结果不一致时，会发生什么？" data-en="What happens when the optimization target differs from what we want?">优化目标与真正想要的结果不一致时，会发生什么？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">12</span><div class="week-body"><h3 data-zh="检索与检索增强生成" data-en="Retrieval and RAG">检索与检索增强生成</h3><p data-zh="系统应该何时检索证据，何时拒绝作答？" data-en="When should a system retrieve evidence, and when should it abstain?">系统应该何时检索证据，何时拒绝作答？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">13</span><div class="week-body"><h3 data-zh="高效推理" data-en="Efficient inference">高效推理</h3><p data-zh="对于一个具体工作负载，哪种加速真正有用？" data-en="Which speed improvement matters for a particular workload?">对于一个具体工作负载，哪种加速真正有用？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">14</span><div class="week-body"><h3 data-zh="扩散语言模型" data-en="Diffusion language models">扩散语言模型</h3><p data-zh="生成过程可以同时更新多个位置时，有何不同？" data-en="What changes when generation can update multiple token positions?">生成过程可以同时更新多个位置时，有何不同？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">15</span><div class="week-body"><h3 data-zh="智能体与工具使用" data-en="Agents and tool use">智能体与工具使用</h3><p data-zh="工具调用循环带来的改进，是否值得额外成本？" data-en="When does a tool-use loop improve an outcome enough to justify its cost?">工具调用循环带来的改进，是否值得额外成本？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+            <li class="week"><span class="week-number">16</span><div class="week-body"><h3 data-zh="研究综合与项目修订" data-en="Research synthesis and project revision">研究综合与项目修订</h3><p data-zh="哪些结论已获实验支持，哪些还需要进一步验证？" data-en="Which claims are supported by experiments, and what remains to be checked?">哪些结论已获实验支持，哪些还需要进一步验证？</p></div><span class="status planned" data-zh="计划" data-en="Planned">计划</span></li>
+          </ol>
+        </details>
+        <p class="section-footnote"><span data-zh="已发布讲义可在线阅读；练习的运行环境和完整安排见" data-en="Published slides can be read online. For exercise setup and the complete schedule, see the">已发布讲义可在线阅读；练习的运行环境和完整安排见</span> <a href="https://baojian.github.io/llm-26-fall/#schedule" data-zh="秋季课程站" data-en="semester site">秋季课程站</a><span data-zh="。" data-en=".">。</span></p>
+      </section>
+
+      <section id="materials" class="content-section" aria-labelledby="materials-title">
+        <div class="section-heading"><p class="section-number">03 /</p><h2 id="materials-title" data-zh="从一份讲义开始动手" data-en="From a lecture to a working experiment">从一份讲义开始动手</h2></div>
+        <p class="section-intro" data-zh="资源连接到 2026 秋季课程的公开版本。作业说明、启动代码和公开测试随学期站更新。" data-en="These links point to public Fall 2026 materials. Assignment instructions, starter code, and public tests are maintained with the semester course.">资源连接到 2026 秋季课程的公开版本。作业说明、启动代码和公开测试随学期站更新。</p>
+        <div class="resources-grid">
+          <article class="resource-card"><p class="resource-label" data-zh="讲义与练习" data-en="LECTURES &amp; PRACTICE">讲义与练习</p><h3 data-zh="阅读、运行、检查" data-en="Read, run, inspect">阅读、运行、检查</h3><p data-zh="在线讲义配合 Notebook 练习，从分词到小模型训练逐步验证关键概念。" data-en="Pair lecture slides with notebook exercises to check core ideas, from tokenization to training a small model.">在线讲义配合 Notebook 练习，从分词到小模型训练逐步验证关键概念。</p><ul class="resource-links"><li><a href="https://baojian.github.io/llm-26-fall/#schedule" data-zh="每周讲义与练习 ↗" data-en="Weekly slides and exercises ↗">每周讲义与练习 ↗</a></li><li><a href="https://github.com/baojian/llm-26-fall#getting-started" data-zh="本地运行说明 ↗" data-en="Local setup instructions ↗">本地运行说明 ↗</a></li></ul></article>
+          <article class="resource-card"><p class="resource-label" data-zh="A1 · 已发布" data-en="A1 · RELEASED">A1 · 已发布</p><h3 data-zh="分词与语言模型" data-en="Tokenization and language models">分词与语言模型</h3><p data-zh="实现字节级 BPE、平滑 N-gram 基线和小型神经语言模型，在中英文留出文本上评估。" data-en="Implement byte-level BPE, smoothed n-gram baselines, and a small neural LM; evaluate on held-out English and Chinese text.">实现字节级 BPE、平滑 N-gram 基线和小型神经语言模型，在中英文留出文本上评估。</p><a class="card-link" href="https://github.com/baojian/llm-26-fall/tree/main/assignments/a1-tokenization-and-language-models" data-zh="作业说明与代码 ↗" data-en="Handout and code ↗">作业说明与代码 ↗</a></article>
+          <article class="resource-card"><p class="resource-label" data-zh="A2 · 已发布" data-en="A2 · RELEASED">A2 · 已发布</p><h3 data-zh="构建并研究小型语言模型" data-en="Build and investigate a small LM">构建并研究小型语言模型</h3><p data-zh="构建因果 Transformer，验证训练与断点续训，比较解码设置，并在固定预算下研究数据去重。" data-en="Build a causal Transformer, verify training and checkpoint restart, compare decoding settings, and study deduplication at a fixed budget.">构建因果 Transformer，验证训练与断点续训，比较解码设置，并在固定预算下研究数据去重。</p><a class="card-link" href="https://github.com/baojian/llm-26-fall/tree/main/assignments/a2-build-a-small-lm" data-zh="作业说明与代码 ↗" data-en="Handout and code ↗">作业说明与代码 ↗</a></article>
+          <article class="resource-card"><p class="resource-label muted" data-zh="A3 · 教学计划" data-en="A3 · PLANNED">A3 · 教学计划</p><h3 data-zh="模型适配与评测" data-en="Adapt and evaluate">模型适配与评测</h3><p data-zh="计划在预训练模型上进行监督微调，与未适配模型比较，分析改进和退化。具体要求随正式作业发布。" data-en="Planned work: fine-tune a pretrained model, compare it with the unadapted baseline, and inspect improvements and regressions. Requirements will accompany the assignment release.">计划在预训练模型上进行监督微调，与未适配模型比较，分析改进和退化。具体要求随正式作业发布。</p><a class="card-link" href="https://baojian.github.io/llm-26-fall/#assessment" data-zh="查看学期考核安排 ↗" data-en="View the semester assessment plan ↗">查看学期考核安排 ↗</a></article>
+        </div>
+        <div class="reading-strip"><h3 data-zh="延伸阅读" data-en="Further reading">延伸阅读</h3><div><a href="https://baojian.github.io/llm-26-fall/docs/lecture-01-pre-tokenization.html" data-zh="文本预处理与分词流水线" data-en="Text preprocessing and tokenizer pipelines">文本预处理与分词流水线</a><a href="https://web.stanford.edu/~jurafsky/slp3/" lang="en">Speech and Language Processing</a><a href="https://cs336.stanford.edu/" lang="en">Stanford CS336</a></div></div>
+      </section>
+
+      <section id="project" class="content-section" aria-labelledby="project-title">
+        <div class="section-heading"><p class="section-number">04 /</p><h2 id="project-title" data-zh="围绕一个问题，建立自己的证据" data-en="One question. Evidence you can explain.">围绕一个问题，建立自己的证据</h2></div>
+        <div class="project-layout">
+          <div><p class="section-intro" data-zh="每位同学独立完成一个 NLP 或 LLM 项目。优先从自己的兴趣提出问题，也可以参考课程的 48 个候选方向。所有选题采用相同的个人项目要求。" data-en="Each student completes an individual NLP or LLM project. Start with your own interests or explore 48 suggested directions. Student-proposed and suggested topics follow the same requirements.">每位同学独立完成一个 NLP 或 LLM 项目。优先从自己的兴趣提出问题，也可以参考课程的 48 个候选方向。所有选题采用相同的个人项目要求。</p><p data-zh="项目须包含实现、实验或经过测试的成果，以及有意义的比较和分析；单纯文献综述不能替代实践。优先选择 CPU 实验或短时 GPU 运行，并明确数据、算力和成本。" data-en="Include an implementation, experiment, or tested artifact with meaningful comparisons and analysis. A survey alone is insufficient. Prefer CPU studies or short GPU runs, and make data, compute, and cost explicit.">项目须包含实现、实验或经过测试的成果，以及有意义的比较和分析；单纯文献综述不能替代实践。优先选择 CPU 实验或短时 GPU 运行，并明确数据、算力和成本。</p><a class="button secondary" href="https://baojian.github.io/llm-26-fall/docs/project-candidates.html"><span data-zh="提出自选题，或浏览 48 个方向" data-en="Propose a topic or explore 48 directions">提出自选题，或浏览 48 个方向</span><span aria-hidden="true">↗</span></a></div>
+          <aside class="project-process" aria-labelledby="project-process-title"><h3 id="project-process-title" data-zh="2026 秋季 · 书面提交" data-en="Fall 2026 · Written checkpoints">2026 秋季 · 书面提交</h3><ol><li><strong data-zh="计划书" data-en="Proposal">计划书</strong><span data-zh="1 页：问题、基线、评估方案与资源预算。" data-en="One page: question, baseline, evaluation plan, and resource budget.">1 页：问题、基线、评估方案与资源预算。</span></li><li><strong data-zh="进展报告" data-en="Progress update">进展报告</strong><span data-zh="最多 2 页：可运行基线、初步测量和一次受控比较。" data-en="Up to two pages: a working baseline, initial measurements, and one controlled comparison.">最多 2 页：可运行基线、初步测量和一次受控比较。</span></li><li><strong data-zh="最终提交" data-en="Final submission">最终提交</strong><span data-zh="正文最多 6 页，附代码与实验记录；参考文献和附录不计入页数。" data-en="Up to six pages of main content, plus code and an experiment record. References and appendices are excluded from the limit.">正文最多 6 页，附代码与实验记录；参考文献和附录不计入页数。</span></li></ol><p class="small" data-zh="个人完成，通过 eLearning 提交；无需展示、海报或口头答辩。" data-en="Individual work, submitted through eLearning. No presentations, posters, or oral defenses are required.">个人完成，通过 eLearning 提交；无需展示、海报或口头答辩。</p></aside>
+        </div>
+      </section>
+
+      <section id="assessment" class="content-section" aria-labelledby="assessment-title">
+        <div class="section-heading"><p class="section-number">05 /</p><h2 id="assessment-title" data-zh="持续练习，独立完成" data-en="Steady practice, individual work">持续练习，独立完成</h2></div>
+        <p class="section-intro" data-zh="2026 秋季采用以下考核结构。本科生与研究生使用相同的必做任务、学习目标和评分标准。" data-en="The following assessment structure applies to Fall 2026. Undergraduate and master's students have the same required work, learning objectives, and grading criteria.">2026 秋季采用以下考核结构。本科生与研究生使用相同的必做任务、学习目标和评分标准。</p>
+        <div class="assessment-bar" aria-hidden="true"><span class="quiz"></span><span class="assignment"></span><span class="individual"></span></div>
+        <dl class="assessment-grid"><div><dt data-zh="测验" data-en="Quizzes">测验</dt><dd>10<span>%</span><p data-zh="5 次测验，每次占总评 2%。" data-en="Five quizzes, each worth 2% of the course grade.">5 次测验，每次占总评 2%。</p></dd></div><div><dt data-zh="作业" data-en="Assignments">作业</dt><dd>45<span>%</span><p data-zh="3 次实践作业，每次占总评 15%。" data-en="Three practical assignments, each worth 15%.">3 次实践作业，每次占总评 15%。</p></dd></div><div><dt data-zh="个人项目" data-en="Individual project">个人项目</dt><dd>45<span>%</span><p data-zh="围绕一个问题完成实验与书面报告。" data-en="Experiments and written reports centered on one question.">围绕一个问题完成实验与书面报告。</p></dd></div></dl>
+        <div class="policies"><div><h3 data-zh="负责任地使用 AI" data-en="Use AI responsibly">负责任地使用 AI</h3><p data-zh="实践作业和项目可使用 AI 辅助编程、调试与文献探索。核查来源与计算，说明实质性的 AI 辅助，对提交的结论负责；测验不允许使用 AI。" data-en="AI assistance is allowed for coding, debugging, and literature exploration in practical work. Check sources and computations, disclose material assistance, and take responsibility for conclusions. AI is not allowed in quizzes.">实践作业和项目可使用 AI 辅助编程、调试与文献探索。核查来源与计算，说明实质性的 AI 辅助，对提交的结论负责；测验不允许使用 AI。</p></div><div><h3 data-zh="引用、复现与提交" data-en="Attribution, reproducibility, and submission">引用、复现与提交</h3><p data-zh="注明复用的代码、数据与观点，保留可追溯的实验记录。测验、作业和个人项目通过 eLearning 私下提交；详细要求见学期课程站。" data-en="Attribute reused code, data, and ideas, and keep a traceable experiment record. Submit quizzes, assignments, and projects privately through eLearning. Consult the semester site for full requirements.">注明复用的代码、数据与观点，保留可追溯的实验记录。测验、作业和个人项目通过 eLearning 私下提交；详细要求见学期课程站。</p></div></div>
+        <p class="section-footnote"><a href="https://baojian.github.io/llm-26-fall/#assessment" data-zh="完整考核要求与项目评分说明 ↗" data-en="Full assessment requirements and project rubric ↗">完整考核要求与项目评分说明 ↗</a></p>
+      </section>
+
+      <section id="offerings" class="content-section offerings" aria-labelledby="offerings-title">
+        <div class="section-heading"><p class="section-number">06 /</p><h2 id="offerings-title" data-zh="学期课程入口" data-en="Course offerings">学期课程入口</h2></div>
+        <a class="offering-row" href="https://baojian.github.io/llm-26-fall/"><span class="offering-year">2026</span><span class="offering-name"><strong data-zh="秋季 · NLP and LLMs" data-en="Fall · NLP and LLMs">秋季 · NLP and LLMs</strong><span data-zh="教学安排、讲义、作业与项目" data-en="Schedule, lectures, assignments, and projects">教学安排、讲义、作业与项目</span></span><span class="status current" data-zh="当前学期" data-en="Current">当前学期</span><span class="offering-arrow" aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>NLP &amp; LLMs</strong><p data-zh="复旦大学 · 自然语言处理与大语言模型" data-en="Fudan University · Natural Language Processing and Large Language Models">复旦大学 · 自然语言处理与大语言模型</p></div><div class="footer-links"><a href="https://baojian.github.io/llm-26-fall/" data-zh="2026 秋季课程" data-en="Fall 2026">2026 秋季课程</a><a href="https://github.com/baojian/llm-26-fall" data-zh="课程资料" data-en="Course repository">课程资料</a><a href="#overview" data-zh="回到顶部 ↑" data-en="Back to top ↑">回到顶部 ↑</a></div></div></footer>
+</body>
+</html>
